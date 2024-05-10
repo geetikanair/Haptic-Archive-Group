@@ -1,0 +1,786 @@
+/* full css reset code */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* full css rest end */
+body {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+}
+body {
+  min-height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+}
+
+.iframe-container {
+  width: 100%;
+  height: 400px; /* adjust height as needed */
+}
+
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+.ourcollect{
+ position: relative;
+ margin-top: 17%;
+ margin-left: -39%;
+}
+.ourcollect p{
+  font-size: 27px;
+  font-weight: 100;
+}
+
+
+#findus{
+  margin-top: 6%;
+  font-size: 150px;
+  color:white;
+  font-weight: lighter;
+  font-style: normal;
+ 
+}
+.inner-container {
+  display: flex;
+
+}
+.half {
+  flex: 1;
+  height: 70%;
+}
+/* Optional styling for each half */
+
+.right-half {
+
+  text-align: left;
+margin-left: 40px;
+font-size: 20px;
+font-weight:bold;
+
+}
+
+.left-half p{
+font-size: 25px;
+
+}
+.button-container{
+  height: 35vh;
+  margin-top: 2%;
+}
+form {
+  max-width: 100%;
+  font-size: 50px;
+}
+#name{
+  width:267px;
+}
+#email{
+  width:267px; 
+}
+input[type="text"], textarea {
+width: 1000px;
+  border: none;
+  border-bottom: 1px solid #ccc; /* Display bottom border only */
+  font-size: 20px;
+  text-decoration: none;
+}
+.button-container h1{
+  font-size:50px ;
+}
+textarea{
+  width:90%;
+height: auto;
+border: 1px solid black;
+text-decoration: none;
+}
+
+.save{
+  margin-left: 82%;
+  width: 110px;
+  height: 46px;
+  background-color: #7F5454;
+  font-size: 25px;
+  color: white;
+  font-weight: 300;
+  font-style: normal;
+}
+
+footer {
+  color: white;
+margin-top: 22%;
+  text-align: center;
+  height: 18vh;
+
+}
+.footer-section {
+  display: inline-block;
+  width: 100%;
+ 
+}
+.left-section, .right-section {
+  width: calc((100% - 50%) / 2); /* Divide the remaining space equally between the left and right sections */
+}
+.middle-section {
+  width: 50%; /* Fixed width for the middle section */
+}
+
+.middle-section p{
+  font-size: 13px; /* Fixed width for the middle section */
+}
+/* Optional styling for each footer section */
+.left-section {
+color: black;
+  width: 20%;
+  text-align: left;
+}
+.middle-section {
+  color: black;
+  width: 55%;
+  text-align: center;
+}
+.right-section {
+ color: black;
+  width: 24%;
+  text-align: right;
+}
+
+
+
+footer a {
+  font-size: 24px; /* Adjust the size of the icons */
+  color:#7F5454; /* Change the color of the icons */
+  text-decoration: none; /* Remove underline from the links */
+  margin-right: 10px; /* Add some space between icons */
+}
+
+/* Style for when hovering over the icons */
+footer a:hover {
+  color: #007bff; /* Change the color on hover */
+}
+footer h2{
+  font-size:35px ;
+  font-weight: 300;
+  font-style: normal;
+}
+footer p{
+  font-size:30px ;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+.nav{
+display: flex;
+position: relative;
+
+}
+.logo img {
+  height: 30px; /* Adjust the height as needed */
+}
+.logo{
+  margin-top: 1%;
+ margin-left: 2%;
+ position:absolute;
+  }
+.menu {
+  margin-top: 1%;
+ position: absolute;
+ margin-left: 92%;
+ font-size:35px;
+ text-decoration: none;
+font-weight: bold;
+color: white;
+
+}
+
+/* code for side navigation bar */
+
+#menu-toggle {
+  display: none;
+}
+
+
+#menu-icon {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+    z-index: 1;
+}
+#menu-icon:hover {
+  animation: blink 0.8s infinite; /* Blink animation on hover */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* Visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    opacity: 1; /* Visible */
+  }
+}
+#side-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(127, 84, 84, 0.8); */
+ backdrop-filter: blur(5px);
+  transition: left 0.3s ease;
+}
+.side-nav-content {
+  width: 100%; /* Adjust the width as needed */
+}
+
+#side-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:50%;
+}
+
+#side-nav ul li {
+  padding: 10px;
+}
+
+#side-nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+#side-nav ul li a:hover {
+ 
+
+
+    font-size: 50px; /* increase font size on hover */
+  color: lightgoldenrodyellow;
+
+}
+
+#close-btn {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+#menu-toggle:checked + #menu-icon + #side-nav #close-btn {
+  display: block;
+}
+
+#menu-toggle:checked + #menu-icon {
+  left: 200px;
+    display: none; /* Hide the menu icon when side nav is open */
+}
+
+#menu-toggle:checked + #menu-icon + #side-nav {
+  left: 0;
+}
+
+.main-content {
+  margin-left: 0;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+/* horizontal line */
+.horizontal-line {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  border-top: 10px solid white; /* Adjust line properties as needed */
+}
+
+.text {
+  padding: 0 12px; /* Adjust padding as needed */
+  font-size:14px;
+  font-weight: 100;
+color: white;
+}
+
+hr{
+  width:100%;
+}
+
+
+
+  
+ #aro{
+  width: 20%;
+  
+ }
+ .hom{
+  font-size: 30px;
+  font-weight: 500;
+ }
+
+ /* .fa-arrow-right {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1.8em; /* Adjust the size as needed */
+
+
+.collect{
+  margin-top: 16%;
+  position: absolute;
+ 
+  padding: 3%;
+
+}
+
+ .half left-half{
+  position: relative;
+  font-size: 19px;
+  color: whitesmoke;
+  justify-content: right;
+}
+
+ .half right-half{
+  position: relative;
+  font-size: 26px;
+  color: whitesmoke;
+  justify-content: left;
+}
+.half {
+  width: 50%; /* Each half takes up 50% of the container's width */
+  height: 100vh; /* Adjust height as needed */
+}
+
+
+
+.left{
+ font-size: 20px;
+ font-style: normal;
+ color: white;
+}
+.right a{
+  font-size: 25px;
+ font-style: normal;
+color: whitesmoke;
+ text-decoration: none;
+}
+
+/* collectionmodel  css */
+.modal {
+
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  margin-top: 22%;
+  margin-left: 22%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 900px;
+  height: 400px;
+  overflow: hidden;
+ background-color: #007bff;
+ border-radius: 10px; 
+ position: absolute;
+
+}
+
+.modal-content {
+  position: relative;
+  border: 1px solid #888;
+  width: 900px; /* Decrease the width */
+  height: 400px; /* Decrease the height */
+  border-radius: 10px; 
+
+}
+
+.close {
+  color: #aaa;
+  margin-right: 20px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-container {
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 64px;
+  display: flex;
+  justify-content: space-between; /* Distribute the space between the images */
+  align-items: center; /* Align images vertically in the center */
+}
+
+.image-container, .image1 {
+  position: relative;
+  margin-left: 55px;
+  width: 250px; /* Set width of each image */
+  height:auto; /* Maintain aspect ratio */
+}
+
+.image-container .image1 {
+  transition: transform 0.3s ease; /* Adding transition */
+}
+.image-container .image1:hover {
+  transform: scale(1.1);
+  cursor: pointer; /* Scaled image by 10% on hover */
+}
+
+
+.image-container ,.image2 {
+
+  margin-left: 40px;
+  width: 250px; /* Set width of each image */
+  height:auto; /* Maintain aspect ratio */
+}
+
+.image-container .image2 {
+  transition: transform 0.3s ease; /* Adding transition */
+}
+.image-container .image2:hover  {
+  transform: scale(1.1);
+  cursor: pointer; /* Scaled image by 10% on hover */
+}
+
+.image-container, .image3 {
+  position: relative;
+  margin-left: 35px;
+  width: 250px; /* Set width of each image */
+  height:auto; /* Maintain aspect ratio */
+}
+
+.image-container .image3 {
+  transition: transform 0.3s ease; /* Adding transition */
+}
+.image-container .image3:hover  {
+  transform: scale(1.1);
+  cursor: pointer; /* Scaled image by 10% on hover */
+}
+
+
+  .aboutuscollection{
+    position: relative;
+    margin-top: -2%;
+       margin-left: -39%;
+   }
+   .aboutuscollection p{
+     font-size: 27px;
+     font-weight: 100;
+   }
+
+
+
+/* about us  */
+
+
+/* 
+.aboutus-container{
+  width: 100%;
+   height: 100%;
+ padding-left: 2%;
+ padding-right: 2%;
+ padding-top: 2%;
+ justify-content: space-between; 
+ background-color: #7F5454;
+ 
+ } */
+/* 
+#message{
+  margin-top: -9%;
+  font-size: 23px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 3px;
+}
+.row1 {
+  display: flex;
+  gap: 40px; 
+} */
+
+/* .column1 {
+  flex: 1;
+  text-align: left;
+  font-size: 23px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 0px;
+  
+  line-height: 1.2;
+}
+
+.row2{
+
+  margin-top: 12%;
+  display: flex;
+  gap: 40px;    
+} */
+
+/* .column2 {
+  flex: 1;
+  text-align: left;
+  font-size: 23px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 0px;
+ 
+  line-height: 1.2;
+}
+.column3{
+  text-align: right;
+  font-size: 23px;
+text-decoration: none;
+
+}
+
+.column3 a{
+  color: whitesmoke;
+}
+
+.aboutus-right{
+  margin-left: 3%;
+} */
+/* first object */
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: radial-gradient(circle, #A59490, #927472, #613B3B);
+}
+
+.aboutus-container {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  justify-content: space-between;
+}
+
+.container2 {
+  background-color: transparent;
+}
+
+#message{
+  margin-top: -2%;
+  font-size: 15px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 2px;
+  line-height: 1.2;
+}
+.row1 {
+  display: flex;
+  gap: 30px; /* Adjust the gap size as needed */
+}
+
+.column1 {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 0px;
+  
+  line-height: 1.2;
+}
+
+.row2{
+
+  margin-top: 12%;
+  display: flex;
+  gap: 30px; /* Adjust the gap size as needed */
+}
+
+.column2 {
+  flex: 1;
+  text-align: left;
+  font-size: 18px;
+  color:whitesmoke;
+  font-weight: lighter;
+  word-spacing: 0px;
+  
+  line-height: 1.2;
+ 
+}
+.column3{
+  text-align: right;
+  font-size: 20px;
+text-decoration: none;
+
+}
+
+.column3 a{
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.aboutus-right{
+  margin-left: 1%;
+}
+
+/* first object */
+
+body{
+  background: radial-gradient(circle, #A59490, #927472, #613B3B);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.containerobj {
+  display: flex;
+  flex-direction: row;
+  height: 630px;
+  cursor: pointer;
+ 
+  
+}
+.halfobj {
+
+  margin-top: 7%;
+  flex: 0 0 40%; 
+  padding: 20px;
+  cursor: pointer;
+}
+
+.halfleftobj {
+  margin-top: 0%;
+ flex: 0 0 60%; 
+  padding: 20px;
+
+}
+
+.halfobj p{
+  margin-left: 15%;
+  font-size: 55px;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.halfobj .p1{
+  margin-left:15% ;
+  font-size:25px ;
+  padding-top: 12px;
+
+}
+
+table {
+ margin-left: 6%;
+  width: 75%;
+  border-spacing: 20px; /* Add a gap of 10px between cells */
+  font-size: 15px;
+ color: white;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th:first-child{
+  text-align: right;
+
+}
+td:first-child {
+  text-align: right;
+}
+.new {
+  display: flex;
+  flex-direction: row;
+ 
+
+}
+.newleft p{
+padding-left: 77px;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.newright p{
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+.item{
+margin-left: -40%;
+font-size: 30px;
+
+}
+ 
